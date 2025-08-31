@@ -2,8 +2,7 @@
 
 #
 # OpenPBS installation script
-# Currently supports: Ubuntu 20.04, 22.04, 24.04 (fully tested)
-# In development: RHEL/CentOS 7/8/9, Rocky Linux 8/9 (experimental support)
+# Supports: Ubuntu 24.04 LTS
 # GitHub: https://github.com/AhmedMejri1/OpenPBS-installation-script
 #
 # Usage:
@@ -141,32 +140,15 @@ detect_os() {
     case $OS in
         ubuntu)
             PACKAGE_MANAGER="apt"
-            if [[ ! "$OS_VERSION" =~ ^(20\.04|22\.04|24\.04)$ ]]; then
-                print_warning "Ubuntu $OS_VERSION is not fully tested. Supported versions: 20.04, 22.04, 24.04"
-                read -p "Continue anyway? [y/N]: " continue_choice
-                if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
-                    exit 1
-                fi
-            fi
-            ;;
-        centos|rhel|rocky|almalinux)
-            PACKAGE_MANAGER="yum"
-            if command -v dnf &> /dev/null; then
-                PACKAGE_MANAGER="dnf"
-            fi
-            print_warning "RHEL-based distributions are experimental. Use at your own risk."
-            print_warning "For production use, please use Ubuntu 20.04/22.04/24.04"
-            if [[ "$INTERACTIVE_MODE" == "true" ]]; then
-                read -p "Continue with experimental support? [y/N]: " continue_choice
-                if [[ ! "$continue_choice" =~ ^[Yy]$ ]]; then
-                    exit 1
-                fi
+            if [[ "$OS_VERSION" != "24.04" ]]; then
+                print_error "Only Ubuntu 24.04 is supported by this script"
+                print_info "Detected: Ubuntu $OS_VERSION"
+                exit 1
             fi
             ;;
         *)
             print_error "Unsupported operating system: $OS"
-            print_info "Currently supported: Ubuntu 20.04, 22.04, 24.04"
-            print_info "Experimental: RHEL/CentOS/Rocky/AlmaLinux 7/8/9"
+            print_info "This script only supports Ubuntu 24.04"
             exit 1
             ;;
     esac
