@@ -1,14 +1,14 @@
 # OpenPBS installation script
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![OS Support](https://img.shields.io/badge/OS-Ubuntu%2020.04%2B-green.svg)
+![OS Support](https://img.shields.io/badge/OS-Ubuntu%2024.04-green.svg)
 ![Architecture](https://img.shields.io/badge/arch-x86__64%20|%20arm64-lightgrey.svg)
 
 A comprehensive installation script for OpenPBS (Portable Batch System) that automates the download, compilation, and configuration process across multiple Linux distributions.
 
 ## ✨ Features
 
-- **Distribution Support**: Primarily Ubuntu 20.04/22.04/24.04 (RHEL/CentOS/Rocky support in development)
+- **Distribution Support**: Ubuntu 24.04
 - **Architecture Support**: x86_64 and arm64
 - **Flexible Node Types**: Server, compute, or combined installations
 - **Accounting Support**: Optional PostgreSQL integration for job accounting
@@ -51,12 +51,7 @@ sudo ./pbs_install.sh
 
 ### Supported Operating Systems
 
-- **Ubuntu**: 20.04, 22.04, 24.04 ✅ (Fully tested)
-- **RHEL/CentOS**: 7, 8, 9 🚧 (In development)
-- **Rocky Linux**: 8, 9 🚧 (In development)
-- **AlmaLinux**: 8, 9 🚧 (In development)
-
-> **Note**: Currently, the script is fully tested and supported on Ubuntu distributions. RHEL-based distribution support is under development and may require additional testing.
+- **Ubuntu**: 24.04 ✅ (Fully tested)
 
 ## 🔧 Usage
 
