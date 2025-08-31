@@ -22,15 +22,15 @@ A comprehensive installation script for OpenPBS (Portable Batch System) that aut
 
 ```bash
 # Download and run installer
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AhmedMejri/OpenPBS-Installer/main/pbs_install.sh)"
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AhmedMejri1/OpenPBS-installation-script/main/pbs_install.sh)"
 ```
 
 ### Standard Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/AhmedMejri/OpenPBS-Installer.git
-cd OpenPBS-Installer
+git clone https://github.com/AhmedMejri1/OpenPBS-installation-script.git
+cd OpenPBS-installation-script
 
 # Make executable
 chmod +x pbs_install.sh
@@ -273,8 +273,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Development Setup
 
 ```bash
-git clone https://github.com/AhmedMejri/OpenPBS-Installer.git
-cd OpenPBS-Installer
+git clone https://github.com/AhmedMejri1/OpenPBS-installation-script.git
+cd OpenPBS-installation-script
 
 # Test in virtual environment
 vagrant up  # See Vagrantfile for test environments
@@ -310,7 +310,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🐛 Bug Reports
 
-Please report issues using our [GitHub Issues](https://github.com/AhmedMejri/OpenPBS-Installer/issues) with:
+Please report issues using our [GitHub Issues](https://github.com/AhmedMejri1/OpenPBS-installation-script/issues) with:
 - Operating system and version
 - PBS version being installed
 - Full error logs
