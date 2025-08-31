@@ -1,4 +1,4 @@
-# OpenPBS Installer
+# OpenPBS installation script
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![OS Support](https://img.shields.io/badge/OS-Ubuntu%20|%20RHEL%20|%20Rocky%20|%20CentOS-green.svg)
