@@ -4,7 +4,7 @@
 # OpenPBS Automated Installation Script
 # Currently supports: Ubuntu 20.04, 22.04, 24.04 (fully tested)
 # In development: RHEL/CentOS 7/8/9, Rocky Linux 8/9 (experimental support)
-# GitHub: https://github.com/yourusername/OpenPBS-Installer
+# GitHub: https://github.com/AhmedMejri/OpenPBS-Installer
 #
 # Usage:
 #   bash pbs_install.sh
