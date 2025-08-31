@@ -1,14 +1,14 @@
 # OpenPBS installation script
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![OS Support](https://img.shields.io/badge/OS-Ubuntu%2020.04%2B-green.svg)
+![OS Support](https://img.shields.io/badge/OS-Ubuntu%2024.04-green.svg)
 ![Architecture](https://img.shields.io/badge/arch-x86__64%20|%20arm64-lightgrey.svg)
 
 A comprehensive installation script for OpenPBS (Portable Batch System) that automates the download, compilation, and configuration process across multiple Linux distributions.
 
 ## ✨ Features
 
-- **Distribution Support**: Primarily Ubuntu 20.04/22.04/24.04 (RHEL/CentOS/Rocky support in development)
+- **Distribution Support**: Ubuntu 24.04
 - **Architecture Support**: x86_64 and arm64
 - **Flexible Node Types**: Server, compute, or combined installations
 - **Accounting Support**: Optional PostgreSQL integration for job accounting
@@ -22,15 +22,15 @@ A comprehensive installation script for OpenPBS (Portable Batch System) that aut
 
 ```bash
 # Download and run installer
-sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AhmedMejri/OpenPBS-Installer/main/pbs_install.sh)"
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/AhmedMejri1/OpenPBS-installation-script/main/pbs_install.sh)"
 ```
 
 ### Standard Installation
 
 ```bash
 # Clone repository
-git clone https://github.com/AhmedMejri/OpenPBS-Installer.git
-cd OpenPBS-Installer
+git clone https://github.com/AhmedMejri1/OpenPBS-installation-script.git
+cd OpenPBS-installation-script
 
 # Make executable
 chmod +x pbs_install.sh
@@ -51,12 +51,7 @@ sudo ./pbs_install.sh
 
 ### Supported Operating Systems
 
-- **Ubuntu**: 20.04, 22.04, 24.04 ✅ (Fully tested)
-- **RHEL/CentOS**: 7, 8, 9 🚧 (In development)
-- **Rocky Linux**: 8, 9 🚧 (In development)
-- **AlmaLinux**: 8, 9 🚧 (In development)
-
-> **Note**: Currently, the script is fully tested and supported on Ubuntu distributions. RHEL-based distribution support is under development and may require additional testing.
+- **Ubuntu**: 24.04 ✅ (Fully tested)
 
 ## 🔧 Usage
 
@@ -273,8 +268,8 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 ### Development Setup
 
 ```bash
-git clone https://github.com/AhmedMejri/OpenPBS-Installer.git
-cd OpenPBS-Installer
+git clone https://github.com/AhmedMejri1/OpenPBS-installation-script.git
+cd OpenPBS-installation-script
 
 # Test in virtual environment
 vagrant up  # See Vagrantfile for test environments
@@ -310,7 +305,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🐛 Bug Reports
 
-Please report issues using our [GitHub Issues](https://github.com/AhmedMejri/OpenPBS-Installer/issues) with:
+Please report issues using our [GitHub Issues](https://github.com/AhmedMejri1/OpenPBS-installation-script/issues) with:
 - Operating system and version
 - PBS version being installed
 - Full error logs
